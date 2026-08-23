@@ -11,14 +11,27 @@
 	<header>
 		<h1>青木功多</h1>
 
-		<nav>
-			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#works">Works</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
+		<div class="header-actions">
+			<button id="theme-toggle"class="theme-toggle" aria-label="テーマ切り替え">
+				<span class="theme-icon">☾</span>
+			</button>
+
+			<div class="menu-container">
+				<button id="menu-toggle" aria-label="メニューを開く">
+					☰
+				</button>
+
+				<nav id="navigation">
+					<ul>
+						<li><a href="#about">About</a></li>
+						<li><a href="#works">Works</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
 		</nav>
+
 	</header>
 
 	<main>
@@ -81,5 +94,6 @@
 	<footer>
 		<p>&copy; 2026 青木功多</p>
 	</footer>
+	<script src="script.js"></script>
 </body>
 </html>
