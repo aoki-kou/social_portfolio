@@ -1,7 +1,10 @@
 function Contact() {
     return (
         <section id="contact">
-          <h2>Contact</h2>
+          <div className="section-heading">
+            <h2>Contact</h2>
+            <p>SNS</p>
+          </div>
 
           <a href="https://github.com/aoki-kou">GitHub</a>
           <a href="https://x.com/koUtarutaru">X</a>

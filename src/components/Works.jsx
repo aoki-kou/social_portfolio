@@ -2,7 +2,11 @@ import WorkCard  from "./WorkCard";
 function Works() {
   return (
     <section id="works">
-      <h2>Works</h2>
+      <div className="section-heading">
+        <h2>Works</h2>
+        <p>制作したサービス</p>
+      </div>
+
 
       <div className="works-grid">
         <WorkCard
