@@ -14,7 +14,12 @@ function WorkCard({ title, image, description, serviceUrl, githubUrl, technologi
                 </div>
                 <div className="work-links">
                     <a href={serviceUrl} className="service-link">アプリを見る</a>
-                    <a href={githubUrl} className="github-link">
+                    <a 
+                      href={githubUrl} 
+                      className="github-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                         <img src="/images/skills/github.svg" alt="" />
                         GitHub
                     </a>
