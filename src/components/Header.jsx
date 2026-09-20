@@ -13,6 +13,13 @@ function Header() {
     setIsMenuOpen(!isMenuOpen)
   }
 
+  const navItems = [
+    { label: 'About', href: '#about' },
+    { label: 'Works', href: '#works' },
+    { label: 'Skills', href: '#skills' },
+    { label: 'Contact', href: '#contact' }
+  ]
+
   return(
     <header>
       <h1>青木功多</h1>
@@ -42,10 +49,11 @@ function Header() {
         {isMenuOpen && (
           <nav className="navigation">
             <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#works">Works</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#contact">Contact</a></li>
+              {navItems.map((item) => (
+                <li key={item.href}>
+                  <a href={item.href}>{item.label}</a>
+                </li>
+              ))}
             </ul>
           </nav>
         )}
