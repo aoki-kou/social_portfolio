@@ -14,7 +14,7 @@ function Works() {
       image: "/images/works/imaiko.png",
       description: "行きたい場所をストックしておくWebアプリです。",
       technologies: ["Ruby", "Ruby on Rails", "React"] ,
-      serviceUrl: "#",
+      serviceUrl: "null",
       githubUrl: "https://github.com/aoki-kou/imaiko"
     }
   ];

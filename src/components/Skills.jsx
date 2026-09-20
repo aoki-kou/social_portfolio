@@ -1,4 +1,15 @@
 function Skills() {
+  const skills = [
+    { name: "Ruby", icon: "/images/skills/ruby.svg" },
+    { name: "Ruby on Rails", icon: "/images/skills/rubyonrails.svg" },
+    { name: "JavaScript", icon: "/images/skills/javascript.svg" },
+    { name: "React", icon: "/images/skills/react.svg" },
+    { name: "PostgreSQL", icon: "/images/skills/postgresql.svg" },
+    { name: "Docker", icon: "/images/skills/docker.svg" },
+    { name: "Git", icon: "/images/skills/git.svg" },
+    { name: "GitHub", icon: "/images/skills/github.svg" }
+  ];
+
   return(
     <section id="skills">
       <div className="section-inner">
@@ -8,38 +19,12 @@ function Skills() {
         </div>
 
         <ul>
-          <li>
-            <img src="/images/skills/ruby.svg" alt="" />
-            <span>Ruby</span>
-          </li>
-          <li>
-            <img src="/images/skills/rubyonrails.svg" alt="" />
-            <span>Ruby on Rails</span>
-          </li>
-          <li>
-            <img src="/images/skills/javascript.svg" alt="" />
-            <span>JavaScript</span>
-          </li>
-          <li>
-            <img src="/images/skills/react.svg" alt="" />
-            <span>React</span>
-          </li>
-          <li>
-            <img src="/images/skills/postgresql.svg" alt="" />
-            <span>PostgreSQL</span>
-          </li>
-          <li>
-            <img src="/images/skills/docker.svg" alt="" />
-            <span>Docker</span>
-          </li>
-          <li>
-            <img src="/images/skills/git.svg" alt="" />
-            <span>Git</span>
-          </li>
-          <li>
-            <img src="/images/skills/github.svg" alt="" />
-            <span>GitHub</span>
-          </li>
+          {skills.map((skill) => (
+            <li key={skill.name}>
+              <img src={skill.icon} alt="" />
+              <span>{skill.name}</span>
+            </li>
+          ))}
         </ul>
       </div>
     </section>
