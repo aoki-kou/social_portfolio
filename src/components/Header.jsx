@@ -1,13 +1,7 @@
 import { useState } from 'react'
 
 function Header() {
-  const [isDark, setIsDark] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  
-  const toggleTheme = () => {
-    setIsDark(!isDark)
-    document.body.classList.toggle('dark')
-  }
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -25,15 +19,6 @@ function Header() {
       <h1>青木功多</h1>
 
       <div className="menu-container">
-        <button
-          className="theme-toggle"
-          aria-label="テーマ切り替え"
-          onClick={toggleTheme}
-        >
-          <span className="theme-icon">
-            {isDark ? '☼' : '☾'}
-          </span>
-        </button>
 
         <button
           id="menu-toggle"
